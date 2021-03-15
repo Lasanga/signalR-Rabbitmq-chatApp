@@ -34,5 +34,5 @@ frontend is hosted in http://localhost:4200
 
 Since this is for demo purpose the consumer service is based on different consumer types(Teams).
 example: 
-Select a team on console application startup and a chat session will be assigned to a agent on the selected team. Will improve the solution with authentication and single consumer service for all the teams in the future.
-On angular application refresh a chat session will be initiated. 
+Select a team on console application startup and a chat session will be assigned to an agent in the selected team. Will improve the solution with authentication and single consumer service for all the teams in the future.
+Refreshing the angular application will create a new chat session that will be added to the message queue. 
