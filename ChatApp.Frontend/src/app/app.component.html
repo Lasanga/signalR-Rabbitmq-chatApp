@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h1>Support request demo - signalR</h1>
+  <input type="text" class="mt-3 mb-3 mr-3">
+  <button class="btn btn-primary">Send Message</button>
+  <h4 class="mb-3">List of Messages</h4>
+
+  <div *ngIf="signalRService.messages.length === 0">
+    <p>You haven't send or received messages</p>
+  </div>
+  <div *ngFor="let message of signalRService.messages">
+    <div>{{message}}</div>
+    <hr>
+  </div>
+</div>
